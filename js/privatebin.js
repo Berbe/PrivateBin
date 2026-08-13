@@ -619,11 +619,11 @@ jQuery.PrivateBin = (function($) {
         me.formatBytes = function (bytes)
         {
             let result = '';
-            const kilobyte = 1000;
+            const kilobyte = 1024;
             const decimalPoint = 2;
             const sizes = [
-                I18n._('B'), I18n._('kB'), I18n._('MB'), I18n._('GB'), I18n._('TB'),
-                I18n._('PB'), I18n._('EB'), I18n._('ZB'), I18n._('YB')
+                I18n._('B'), I18n._('KiB'), I18n._('MiB'), I18n._('GiB'), I18n._('TiB'),
+                I18n._('PiB'), I18n._('EiB'), I18n._('ZiB'), I18n._('YiB')
             ];
             const index = Math.floor(Math.log(bytes) / Math.log(kilobyte));
 
